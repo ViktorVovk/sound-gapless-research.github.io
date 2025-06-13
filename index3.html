@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investigation for gapless sound (HTMLAudioElement)</title>
+</head>
+<body>
+  <p>
+    <a href="./index.html">Back</a>
+  </p>
+  <h3>Investigation for gapless sound</h3>
+  <h4>HTMLAudioElement with Web Audio API (createMediaElementSource)</h4>
+
+  <div style="padding: 15px; border: 1px solid grey; border-radius: 4px; margin-bottom: 10px; padding-top: 0; ">
+    <label>
+      <p>
+        Load audio file, or use default loaded file from Big Foot Bounty slot (bigfootsbounty_respin_music_loop.webm)
+      </p>
+      <input
+        type="file"
+        accept=".mp3,.mp4,.m4a,.webm,.ogg,.wav,audio/*"
+        id="loadFileInput"
+      />
+    </label>
+  </div>
+
+  <div style="display: flex; gap: 16px; flex-direction: column;">  
+    <div style="display: flex; flex-direction: row; gap: 16px;">
+      <button id="playButton">Play</button>
+      <button onclick="document.location.reload()">Reset</button>
+    </div>
+  </div> 
+  <script src="./index3.js"></script>
+</body>
+</html>
